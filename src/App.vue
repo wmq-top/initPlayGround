@@ -1,9 +1,11 @@
 <script setup lang="ts">
+const data = 0
+
 </script>
 
 <template>
   <div>
-    
+    {{ data }}
   </div>
 </template>
 
