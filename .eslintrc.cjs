@@ -1,19 +1,19 @@
 module.exports = {
-    root: true,
-    globals: {
-      defineEmits: 'readonly',
-      defineProps: 'readonly',
-    },
-    extends: [
-      'plugin:@typescript-eslint/recommended',
-      'plugin:vue/vue3-recommended',
-      'airbnb-base',
-    ],
-    parserOptions: {
-      parser: '@typescript-eslint/parser',
-      ecmaVersion: 2020,
-    },
-    rules: {
+  root: true,
+  globals: {
+    defineEmits: 'readonly',
+    defineProps: 'readonly',
+  },
+  extends: [
+    'plugin:@typescript-eslint/recommended',
+    'plugin:vue/vue3-recommended',
+    'airbnb-base',
+  ],
+  parserOptions: {
+    parser: '@typescript-eslint/parser',
+    ecmaVersion: 2020,
+  },
+  rules: {
     'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off', // 禁用 debugger
     'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off', // 禁用 console
     'no-bitwise': 'off', // 禁用按位运算符
@@ -85,5 +85,5 @@ module.exports = {
       },
     ],
     'vue/singleline-html-element-content-newline': 'off', // 要求单行元素的内容前后有一个换行符
-    }
-  }
+  },
+}
